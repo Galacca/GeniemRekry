@@ -1,0 +1,3 @@
+GET http://localhost:8080/todos/3/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTU0MzczNzcwfQ.CyUmbVFrWptJMLJjrArLh6_8AH2nzz_PiiKlZt-yYRg

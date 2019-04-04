@@ -1,0 +1,9 @@
+POST http://localhost:8080/login/create/
+Content-Type: application/json
+
+{
+    "username": "testimies",
+    "name": "Testi",
+    "lastName": "Mies",
+    "password": "123"
+}
