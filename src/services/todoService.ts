@@ -1,9 +1,10 @@
 import {getSingleTodo, createAllTodos, newTodo} from "../repositories/todoRepository"
-import {NotFoundError, UnauthorizedError, BadRequestError} from "../Errors";
+import {NotFoundError, UnauthorizedError} from "../Errors";
 
 const jwt = require('jsonwebtoken')
 
-//Dont really need much checking since no actions are allowed without a token and all user id's are fetched from said token
+//Dont really need much checking since the authorization middleware doesnt allow any actions without a token and
+//all user id's are fetched from said token
 //This should prevent users being able to edit other users data
 
 //This function is a bit redundant, but I assume it needs to be included since it is in the task repo

@@ -6,6 +6,7 @@ export const authorization = ((req, res, next) => {
     //Users do however need to be able to login and create new accounts without a token. Disable checks for those endpoints.
     if ( req.path == '/login/') return next();
     if ( req.path == '/login/create/') return next();
+    
     const authorization = req.get('authorization')
     if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
         req.token = authorization.substring(7)

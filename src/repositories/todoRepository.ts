@@ -31,7 +31,7 @@ import TodoList from '../models/TodoList'
          while (repeats > 0) {
             const todoToInsert = await Todo.query().findById(repeats).select('title')
             await user.$relatedQuery('todolists').insert(todoToInsert)
-            repeats--;
+            repeats--
           }
 
         return await TodoList.query().where('ownerId', '=', userIdFromToken)
