@@ -1,6 +1,5 @@
 .history
 build
 node_modules
-*.db
 ignore
 
