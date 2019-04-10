@@ -10,7 +10,8 @@
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "compile": "tsc",
     "start": "npm run clean && tsc && node build/src/app.js",
-    "start:watch": "tsc-watch --onSuccess \"node ./build/src/app.js\" --onFailure \"echo Compilation failed! \""
+    "start:watch": "tsc-watch --onSuccess \"node ./build/src/app.js\" --onFailure \"echo Compilation failed! \"",
+    "tsc": "tsc"
   },
   "contributors": [
     {
