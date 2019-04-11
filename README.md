@@ -16,6 +16,8 @@ All passwords are 123.
 
 You can also create a new account by posting to /login/create/
 
+The *.http files also contain working access tokens and proper request structure.
+
 The heroku app might be sluggish with response times well over 200 ms.
 
 # Contact Info for Geniem Employers
