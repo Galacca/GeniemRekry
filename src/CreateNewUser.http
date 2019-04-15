@@ -2,7 +2,7 @@ POST http://localhost:8080/login/create/
 Content-Type: application/json
 
 {
-    "username": "testimies",
+    "username": "milla",
     "name": "Testi",
     "lastName": "Mies",
     "password": "123"

@@ -8,6 +8,7 @@ export const createNewUser = async (request) => {
     const body = request.body
     
     if (body.password.length < 3) throw new BadRequestError('Password needs to be at least 3 characters long.');
+    if (body.username.length < 3) throw new BadRequestError('Username needs to be at least 3 characters long.');
     const passwordHash = await bcrypt.hash(body.password, crypto.SALT_ROUNDS)
 
     const user = {
@@ -16,6 +17,10 @@ export const createNewUser = async (request) => {
         lastName: body.lastName,
         passwordHash
     }
+
+    const isDuplicate = await repositoryLoginUser(body.username)
+
+    if (isDuplicate) throw new BadRequestError('Username already exists. Provide a different one.');
       return await repositoryCreateNewUser(user);
 }
 
@@ -26,6 +31,7 @@ export const loginUser = async (request, response) => {
     false :
     await bcrypt.compare(body.password, user.passwordHash)
 
+    console.log("user: " +user)
   if ( !(user && passwordCorrect) ) {
     throw new UnauthorizedError('Invalid username or password')
   }

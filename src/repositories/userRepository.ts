@@ -14,7 +14,7 @@ import User from '../models/User';
     export const repositoryCreateNewUser = async (user: object) => {
         return await User.query().insert(user)
     }
-
+   
     //Except this one...
     export const repositoryLoginUser = async (bodyUsername) => {
         return await User.query().where('username', '=', bodyUsername ).first()
