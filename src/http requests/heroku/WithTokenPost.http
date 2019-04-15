@@ -1,0 +1,7 @@
+POST https://mh-geniem-rekry.herokuapp.com/todos/all/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTU0MzczNzcwfQ.CyUmbVFrWptJMLJjrArLh6_8AH2nzz_PiiKlZt-yYRg
+
+{
+    "todo": "5"
+}

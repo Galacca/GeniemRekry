@@ -1,0 +1,9 @@
+POST https://mh-geniem-rekry.herokuapp.com/login/create/
+Content-Type: application/json
+
+{
+    "username": "testimies",
+    "name": "Testi",
+    "lastName": "Mies",
+    "password": "123"
+}

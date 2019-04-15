@@ -1,0 +1,3 @@
+GET https://mh-geniem-rekry.herokuapp.com/users/2/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTU1MzI1NjE4fQ.kgvnyB6QJ28HgGek47mACXxY9qA1kE5kT_BNgXfectc
