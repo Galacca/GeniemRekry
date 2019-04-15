@@ -1,4 +1,4 @@
-POST https://mh-geniem-rekry.herokuapp.com/
+POST https://mh-geniem-rekry.herokuapp.com/login/
 Content-Type: application/json
 
 {
