@@ -9,7 +9,7 @@
     "clean": "rimraf todos.db build",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "compile": "tsc",
-    "start": "npm run clean && tsc && node build/src/app.js",
+    "start": "npm run tsc && node build/src/app.js",
     "start:watch": "tsc-watch --onSuccess \"node ./build/src/app.js\" --onFailure \"echo Compilation failed! \"",
     "tsc": "tsc"
   },
