@@ -1,4 +1,4 @@
-POST http://localhost:8080/login/
+POST https://mh-geniem-rekry.herokuapp.com/
 Content-Type: application/json
 
 {
